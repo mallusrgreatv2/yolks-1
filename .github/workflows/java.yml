@@ -36,4 +36,4 @@ jobs:
           platforms: linux/amd64,linux/arm64
           push: true
           tags: |
-            ghcr.io/ptero-eggs/yolks:java_${{ matrix.tag }}
+            ghcr.io/mallusrgreatv2/yolks-1:java_${{ matrix.tag }}
