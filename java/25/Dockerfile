@@ -23,7 +23,9 @@ RUN         apt-get update -y \
                 tini \
 				zip \
 				unzip \
+				libargon2-0-dev \
 			&& rm -rf /var/lib/apt/lists/*
+			&& ln -s /usr/lib/x86_64-linux-gnu/libargon2.so /usr/lib/libargon2.so
 
 ## Setup working directory and environment
 ENV         USER=container HOME=/home/container
